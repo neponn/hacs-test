@@ -6,4 +6,4 @@ This thing is cool; it looks like this:
 
 ![card](card.png)
 
-Now updated to v1.3.
+Now updated to v1.4.

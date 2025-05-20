@@ -169,7 +169,7 @@ class ToggleWithGraphicalConfiguration extends HTMLElement {
             this._elements.dl.classList.add("hidden");
         } else {
             this._elements.error.textContent = "";
-            this._elements.topic.textContent = `${this.getName()} (v1.3)`;
+            this._elements.topic.textContent = `${this.getName()} (v1.4)`;
             if (this.isOff()) {
                 this._elements.toggle.classList.remove("on");
                 this._elements.toggle.classList.add("off");
