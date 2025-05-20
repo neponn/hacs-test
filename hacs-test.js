@@ -70,7 +70,6 @@ class ToggleWithGraphicalConfiguration extends HTMLElement {
         this._elements.card = document.createElement("ha-card");
         this._elements.card.innerHTML = `
                 <div class="card-content">
-                    <p>Hello version 1.1</p>
                     <p class="error error hidden">
                     <dl class="dl">
                         <dt class="dt"></dt>
@@ -170,7 +169,7 @@ class ToggleWithGraphicalConfiguration extends HTMLElement {
             this._elements.dl.classList.add("hidden");
         } else {
             this._elements.error.textContent = "";
-            this._elements.topic.textContent = this.getName();
+            this._elements.topic.textContent = `${this.getName()} (v1.2)`;
             if (this.isOff()) {
                 this._elements.toggle.classList.remove("on");
                 this._elements.toggle.classList.add("off");
