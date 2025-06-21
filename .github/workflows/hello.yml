@@ -17,4 +17,4 @@ jobs:
         run: echo "Hello world!"
 
       - name: Test ls
-        run: ls /home/runner/work/hacs-test/hacs-test
+        run: ls -al /home/runner/work/hacs-test/hacs-test/dist/
