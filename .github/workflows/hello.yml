@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: helloworld
+      - name: Hello World
         run: echo "Hello world!"
+
+      - name: Test ls
+        run: ls /home/runner/work/hacs-test/hacs-test
