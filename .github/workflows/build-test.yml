@@ -17,7 +17,7 @@ jobs:
         run: echo "Hello world!"
 
       - name: Pre check
-        run: ls -al /home/runner/work/hacs-test/hacs-test/dist/
+        run: ls -al /home/runner/work/hacs-test/hacs-test/
 
       - name: Build
         run: |
