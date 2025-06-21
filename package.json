@@ -1,0 +1,28 @@
+{
+  "name": "hacs-test",
+  "version": "1.7.0",
+  "author": "neponn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neponn/hacs-test.git"
+  },
+  "source": "hacs-test.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "type": "module",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "memoize-one": "6.0.0",
+    "lit": "^3.1.0"
+  },
+  "description": "[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neponn/hacs-test/issues"
+  },
+  "homepage": "https://github.com/neponn/hacs-test#readme"
+}
