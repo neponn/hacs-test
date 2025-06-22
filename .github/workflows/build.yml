@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pre check
+        run: ls -al /home/runner/work/hacs-test/hacs-test/
+
+      - name: Build
+        run: |
+          cd /home/runner/work/hacs-test/hacs-test
+          npm install
+          npm run build
+
+      - name: Post check
+        run: ls -al /home/runner/work/hacs-test/hacs-test/dist/
